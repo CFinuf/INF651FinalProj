@@ -1,3 +1,8 @@
+/*
+* Chandler Finuf
+* main.js
+* This file is part of the final project submission for INF651 - Front End Web Development
+*/
 // Function 1: createElemWithText
 function createElemWithText(tag = 'p', text = '', className = '') {
     const elem = document.createElement(tag);
@@ -72,7 +77,7 @@ function deleteChildElements(parentElement) {
   }
   
   
-  
+  //Function 6: addButtonListeners
   function addButtonListeners() {
     const buttons = document.querySelectorAll('main button');
     buttons.forEach(button => {
@@ -104,7 +109,7 @@ function deleteChildElements(parentElement) {
     return buttons; // Return the NodeList of buttons
   }
   
-  
+  //Function 8: createComments
   function createComments(comments) {
     if (!comments) {
       return;
@@ -294,7 +299,7 @@ async function displayPosts(postsData) {
   
   
   
-  
+  //Function 17: toggleComments
   function toggleComments(event, postId) {
     if (!event || !postId) {
       return undefined;
